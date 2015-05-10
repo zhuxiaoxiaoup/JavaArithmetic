@@ -1,5 +1,10 @@
 package com.exercise.sort;
-
+/**
+ * 
+ * @author liuyan
+ * 功能：快速排序
+ *
+ */
 public class QuickSortSolution {
 	public int partition( int a[], int begin, int end ){
 		int pivot = a[begin];

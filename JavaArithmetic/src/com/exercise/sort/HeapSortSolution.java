@@ -1,11 +1,16 @@
 package com.exercise.sort;
-
+/**
+ * 
+ * @author liuyan
+ * java实现的堆排序
+ *
+ */
 public class HeapSortSolution {
 	public void heapAdjust( int a[], int i, int size ){
 		int left = 2*i;
 		int right = 2*i + 1;
 		int max = i;
-		if( i <= size/2 ){//如果不是叶子节点就不用调整
+		if( i <= size/2 ){//如果不是叶子节点就不用调整,只有一个元素
 			if( left <= size && a[left-1] > a[max-1])
 				max = left;
 			if( right <= size && a[right-1] > a[max-1])
